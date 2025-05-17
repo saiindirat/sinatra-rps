@@ -1,0 +1,12 @@
+<ul>
+  <li><a href="/rock">Play Rock</a></li>
+  <li><a href="/paper">Play Paper</a></li>
+  <li><a href="/scissors">Play Scissors</a></li>
+</ul>
+
+<% if @computer_move %>
+  <p>They played <%= @computer_move.capitalize %>!</p>
+  <p><%= @outcome %></p>
+<% end %>
+
+<p><a href="/">Rules</a></p>
